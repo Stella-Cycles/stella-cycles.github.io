@@ -1,0 +1,24 @@
+{
+  "name": "stella-cycles-ghpages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stella-Cycles/stellacycles.github.io.git"
+  },
+  "keywords": [],
+  "author": "Ace Young <ace.young289@gmail.com>",
+  "license": "NONE",
+  "bugs": {
+    "url": "https://github.com/Stella-Cycles/stellacycles.github.io/issues"
+  },
+  "homepage": "https://github.com/Stella-Cycles/stellacycles.github.io#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

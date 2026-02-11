@@ -1,6 +1,7 @@
 module.exports = function (eleventyConfig) {
   // Copy `src/style.css` to `_site/style.css`
   eleventyConfig.addPassthroughCopy("src/style.css");
+  eleventyConfig.addPassthroughCopy("CNAME");
 
   return {
     // When a passthrough file is modified, rebuild the pages:
@@ -9,7 +10,7 @@ module.exports = function (eleventyConfig) {
       input: "src",
       includes: "_includes",
       data: "_data",
-      output: "docs",
+      output: "_site",
     },
   };
 };

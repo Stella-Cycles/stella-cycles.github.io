@@ -14,14 +14,16 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: "10.x"
+          node-version: "18.x"
 
       - run: npm ci
 
       - run: npm run build
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          deploy_key: $
-          publish_dir: ./dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          cname: stellacycles.com
+          publish_branch: main
+          publish_dir: ./_site

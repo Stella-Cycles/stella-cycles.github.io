@@ -1,7 +1,7 @@
 module.exports = function (eleventyConfig) {
-  // Copy `src/style.css` to `_site/style.css`
   eleventyConfig.addPassthroughCopy("src/style.css");
   eleventyConfig.addPassthroughCopy("CNAME");
+  eleventyConfig.addPassthroughCopy({ "src/_assets/img/": "img/" });
 
   return {
     // When a passthrough file is modified, rebuild the pages:
